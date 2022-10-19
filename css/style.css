@@ -16,3 +16,9 @@
     --darkerBlue: #aeecef;
     --midBlue: #b0ecee;
 }
+
+.wrapper {
+    background-color: var(--backgroundColour);
+    width: 100vw;
+    min-height: 100vh;
+}
