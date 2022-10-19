@@ -22,3 +22,14 @@
     width: 100vw;
     min-height: 100vh;
 }
+
+#hi {
+    height: 90vh;
+    width: auto;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
