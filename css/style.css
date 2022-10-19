@@ -1,0 +1,18 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroundColour: #fffad2;
+    --lightPink: #ffe2ef;
+    --darkPink: #c4537a;
+    --midPink: #ff99c8;
+    --teal: #119da4;
+    --orange: #f9b985;
+    --icyBlue: #dfffff;
+    --darkerBlue: #aeecef;
+    --midBlue: #b0ecee;
+}
