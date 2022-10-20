@@ -92,6 +92,14 @@ body {
     }
 }
 
+.about-image {
+    transform: rotate(-90deg);
+    margin-bottom: -37%;
+    width: 12%;
+    margin-top: 20%;
+    margin-right: 1%;
+}
+
 .me-image {
     width: 12.5%;
     border: var(--lightPink) solid 0.65vw;
@@ -99,7 +107,7 @@ body {
     float: left;
     z-index: 1;
     margin-right: 59%;
-    margin-bottom: -23.5%;
+    margin-bottom: -24.5%;
     margin-top: 20%;
 }
 
@@ -118,7 +126,7 @@ body {
     border-radius: 4.8vw;
     overflow: hidden;
     background-color: var(--offWhite);
-    padding: 8vh 5vw;
+    padding: 10vh 5vw 8vh;
 }
 
 .describe-me {
