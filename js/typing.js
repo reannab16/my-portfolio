@@ -5,10 +5,10 @@ const textArray = ["who is looking for internships",
 "who loves art and illustration",
 "who loves to dance",
 "who loves creative, aesthetic web-design",
-"is interested in game design",
-"loves to animate",
-"is always doodling",
-"wants to travel the world"];
+"who is interested in game design",
+"who loves to animate",
+"who is always doodling",
+"who wants to travel the world"];
 
 const typingDelay= 100;
 const erasingDelay= 60;
