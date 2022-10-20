@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -17,7 +20,11 @@
     --midBlue: #b0ecee;
 }
 
-.wrapper {
+:root {
+    --bigText: 55px;
+}
+
+.background-container {
     width: 100vw;
     min-height: 100vh;
     overflow: hidden;
@@ -51,6 +58,36 @@ body {
 }
 
 #animation {
-    width: 80%;
+    width: 45%;
     height: auto;
+}
+
+.intro {
+    font-family: "Just Another Hand";
+    font-size: 5vw;
+    color: var(--orange);
+    margin-top: -3.9%;
+}
+
+.heart {
+    height: auto;
+    width: 7%;
+    margin-bottom: 2%;
+}
+
+.typed-text-cursor {
+    color: var(--orange);
+    animation: typing 1s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        color: var(--orange);
+    }
+    49% {
+        color: var(--orange);
+    }
+    50% {
+        color: transparent;
+    }
 }
