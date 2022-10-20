@@ -19,6 +19,7 @@ let textArrayIndex = 0;
 
 function type() {
     if (charIndex < textArray[textArrayIndex].length) {
+        // if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
         typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
         charIndex++;
         setTimeout(type, typingDelay);
@@ -30,6 +31,7 @@ function type() {
 
 function erase() {
     if (charIndex > 0) {
+        // if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
         typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
         charIndex--;
         setTimeout(erase, erasingDelay);

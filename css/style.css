@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Just+Another+Hand&family=Shadows+Into+Light&display=swap');
 
 *, *::before, *::after {
     margin: 0;
@@ -18,6 +19,7 @@
     --icyBlue: #dfffff;
     --darkerBlue: #aeecef;
     --midBlue: #b0ecee;
+    --offWhite: #fffdee;
 }
 
 :root {
@@ -88,4 +90,39 @@ body {
     50% {
         color: transparent;
     }
+}
+
+.me-image {
+    width: 12.5%;
+    border: var(--lightPink) solid 0.65vw;
+    border-radius: 50%;
+    float: left;
+    z-index: 1;
+    margin-right: 59%;
+    margin-bottom: -23.5%;
+    margin-top: 20%;
+}
+
+.hihi-image {
+    width: 30%;
+    height: auto;
+    z-index: 1;
+    float: right;
+    margin-left: 50%;
+}
+
+.text-box {
+    width: 80%;
+    margin: -10.8% 5vw 0;
+    border: var(--teal) 0.5vw solid;
+    border-radius: 4.8vw;
+    overflow: hidden;
+    background-color: var(--offWhite);
+    padding: 8vh 5vw;
+}
+
+.describe-me {
+    font-family: "Patrick Hand";
+    font-size: 2vw;
+    color: var(--darkerBlue);
 }
