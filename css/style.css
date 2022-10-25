@@ -7,6 +7,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    /* border: 1px red solid; */
 }
 
 :root {
@@ -48,6 +49,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.flex-c-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row
 }
 
 body {
@@ -92,37 +100,33 @@ body {
     }
 }
 
-.about-image {
-    transform: rotate(-90deg);
-    margin-bottom: -37%;
-    width: 12%;
+.about-me-header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -5%;
+    width: 80%;
+    height: auto;
     margin-top: 20%;
-    margin-right: 1%;
 }
 
-.me-image {
-    width: 12.5%;
-    border: var(--lightPink) solid 0.65vw;
-    border-radius: 50%;
-    float: left;
+.about-image {
+    width: 20%;
+    margin: 0 0 -1.8% 5vw;
     z-index: 1;
-    margin-right: 59%;
-    margin-bottom: -24.5%;
-    margin-top: 20%;
 }
 
 .hihi-image {
-    width: 30%;
+    width: 47.5%;
     height: auto;
     z-index: 1;
-    float: right;
-    margin-left: 50%;
+    margin-bottom: 13%;
+    box-sizing: content-box;
 }
 
 .text-box {
     width: 80%;
     margin: -10.8% 5vw 0;
-    border: var(--teal) 0.5vw solid;
+    border: var(--darkerBlue) 0.5vw solid;
     border-radius: 4.8vw;
     overflow: hidden;
     background-color: var(--offWhite);
@@ -131,6 +135,6 @@ body {
 
 .describe-me {
     font-family: "Patrick Hand";
-    font-size: 2vw;
-    color: var(--darkerBlue);
+    font-size: max(2vw, 12px);
+    color: var(--teal);
 }
