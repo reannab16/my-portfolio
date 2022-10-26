@@ -1,3 +1,3 @@
 # My Portfolio
 
-vist my portfolio: reanna.dev
+vist my portfolio: https://reanna.dev/
