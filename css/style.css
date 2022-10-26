@@ -36,6 +36,7 @@
 
 .main-container {
     width: 100%;
+    max-width: 1366px;
 }
 
 .flex-c {
@@ -69,7 +70,7 @@ body {
 }
 
 #animation {
-    width: 45%;
+    width: 44.5%;
     height: auto;
 }
 
