@@ -106,6 +106,7 @@ body {
     }
 }
 
+/* ----- making intro part responsive ----- */
 @media screen and (max-width: 768px) {
     #animation {
         width: 80vw;
@@ -117,6 +118,12 @@ body {
         width: 11%;
     }
 }
+/*------------------------------------------*/
+
+.about-me {
+    height: 100%;
+    /* margin-top: 20%; */
+}
 
 .about-me-header {
     justify-content: space-between;
@@ -124,21 +131,22 @@ body {
     margin-bottom: -5%;
     width: 80%;
     height: auto;
-    margin-top: 20%;
 }
 
 .about-image {
     width: 20%;
     margin: 0 0 -1.8% 5vw;
     z-index: 1;
+    min-width: 75px;
 }
 
 .hihi-image {
-    width: 47.5%;
+    width: 47.5%; 
     height: auto;
     z-index: 1;
     margin-bottom: 13%;
     box-sizing: content-box;
+    min-width: 180px;
 }
 
 .text-box {
@@ -148,11 +156,78 @@ body {
     border-radius: 4.8vw;
     overflow: hidden;
     background-color: var(--offWhite);
-    padding: 10vh 5vw 8vh;
+    padding: 10vh 5vw 5vh;
 }
 
 .describe-me {
     font-family: "Patrick Hand";
-    font-size: max(2vw, 12px);
+    font-size: max(2vw, 20px);
     color: var(--teal);
 }
+
+.hihi-image-mob {
+    display: none;
+}
+
+/* making abt me section responsive*/
+
+@media screen and (max-width: 425px) {
+    .about-me-header {
+        flex-direction: column;
+    }
+
+    .about-image {
+        z-index: 100 !important;
+        margin: -5% 0;
+        width: 50vw;
+    }
+
+    .hihi-image {
+        display: none;
+    }
+
+    .hihi-image-mob {
+        display: initial;
+        width: 69vw;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+}
+
+/* @media screen and (max-width: 473px) {
+    .hihi-image {
+        margin-bottom: 12%
+    }
+    .about-image {
+        margin: 0 0 -2% 3vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-image {
+        margin: 0 0 -5% 2.5vw;
+    }
+} */
+
+/* @media screen and (max-width: 380px) {
+    .about-image {
+        margin: 0 0 -9% 2vw;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .about-image {
+        width: 20%;
+        margin: 0 0 -11% 1vw;
+        min-width: none;
+    }
+    .hihi-image {
+        width: 47.5%; 
+        margin-bottom: 11%;
+        min-width: none;
+    }
+} */
+
+
+
+/* --------------------------------*/
