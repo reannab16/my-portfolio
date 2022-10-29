@@ -67,6 +67,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    margin-top: -0.7%;
 }
 
 #animation {
@@ -250,9 +251,69 @@ body {
     }
 }
 
+.portfolio-section {
+    margin-top: 15vh;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.portfolio-header {
+    height: 80vh;
+    width: 12.45%;
+}
+
+.portfolio-gallery {
+    background-color: var(--offWhite);
+    height: 80vh;
+    width: 87.55%;
+}
+
+.buy-art {
+    width: 45%;
+    margin-top: 3vh;
+    font-family: "Patrick Hand";
+    color: var(--darkerBlue);
+    font-size: 3vh;
+    text-align: center;
+}
+
+.buy-art a {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.buy-art a:hover {
+    color: var(--darkerBlue);
+}
+
+.buy-art a:active {
+    color: var(--orange);
+}
+
+.contact {
+    width: 60%;
+    margin-top: 5vh;
+    font-family: "Patrick Hand";
+    color: var(--midPink);
+    font-size: 5vh;
+    text-align: center;
+}
+
+
+
+
 
 .footer {
-    height: 20vh;
-    width: 100%;
+    margin-top: 15vh;
+    height: 8vh;
+    width: 100vw;
+    background-color: var(--offWhite);
+    color: var(--darkerBlue);
+    text-align: center;
+}
 
+.copyright {
+    margin-top: 2.5vh;
+    font-family: "Patrick Hand";
+    opacity: 80%;
 }
