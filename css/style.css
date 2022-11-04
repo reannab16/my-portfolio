@@ -260,13 +260,14 @@ body {
 
 .portfolio-header {
     height: 80vh;
-    width: 12.45%;
+    width: 10.5%;
 }
 
 .portfolio-gallery {
     background-color: var(--offWhite);
+    margin-left: 0.5%;
     height: 80vh;
-    width: 87.55%;
+    width: 89%;
 }
 
 .buy-art {
