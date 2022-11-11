@@ -21,6 +21,7 @@
     --darkerBlue: #aeecef;
     --midBlue: #b0ecee;
     --offWhite: #fffdee;
+    --darkCream: #fff;
 }
 
 :root {
@@ -61,6 +62,38 @@
 
 body {
     overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .flowerNav {
+        display: none;
+    }
+}
+
+.flowerNav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0.5%;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.flowerNav ul {
+    list-style: none;
+    z-index: 3;
+    width: 8%;
+}
+
+.flowerNav li {
+    margin: 30% 0%;
+}
+
+#blooming {
+    width: 80%;
 }
 
 .heythere-container {
@@ -255,7 +288,7 @@ body {
 .portfolio-section {
     margin-top: 15vh;
     justify-content: flex-start;
-    width: 70%;
+    width: 75%;
 }
 
 .portfolio-header {
@@ -292,7 +325,7 @@ body {
     color: var(--orange);
 }
 
-.contact {
+#contact {
     width: 60%;
     margin-top: 5vh;
     font-family: "Patrick Hand";

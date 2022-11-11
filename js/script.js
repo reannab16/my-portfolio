@@ -44,3 +44,12 @@ function Animate() {
 }
 
 console.log('testing');
+
+var flowers = new Array()
+flowers= [
+    "./resources/flower1.PNG",
+    "./resources/flower2.PNG",
+    "./resources/flower3.PNG",
+    "./resources/flower4.PNG",
+    "./resources/flower5.PNG",
+];
