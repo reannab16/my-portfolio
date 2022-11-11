@@ -28,6 +28,10 @@
     --bigText: 55px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .background-container {
     width: 100vw;
     min-height: 100vh;
@@ -64,10 +68,18 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .flowerNav {
         display: none;
     }
+
+    .flower-btn {
+        display: none;
+    }
+}
+
+.add-z {
+    z-index: 1;
 }
 
 .flowerNav {
@@ -77,12 +89,18 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    left: 0.5%;
+    left: 0;
     justify-content: space-between;
-    z-index: 3;
+    z-index: 0;
 }
 
-.flowerNav ul {
+.flower-btn img {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* .flowerNav ul {
     list-style: none;
     z-index: 3;
     width: 8%;
@@ -90,11 +108,25 @@ body {
 
 .flowerNav li {
     margin: 30% 0%;
+} */
+
+/* .flowers-Left {
+    width: 1vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
 }
 
-#blooming {
-    width: 80%;
-}
+.flowers-right {
+    width: 1vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+} */
+
 
 .heythere-container {
     height: 100vh;
@@ -332,6 +364,11 @@ body {
     color: var(--midPink);
     font-size: 5vh;
     text-align: center;
+}
+
+#contact a {
+    color: var(--midPink);
+    text-decoration: underline;
 }
 
 
