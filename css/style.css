@@ -96,6 +96,7 @@ body {
 
 .flower-btn img {
     width: 100px;
+    padding: 0 10px;
     height: auto;
     margin: 10px 0;
 }
@@ -359,6 +360,7 @@ body {
 
 #contact {
     width: 60%;
+    height: 80vh;
     margin-top: 5vh;
     font-family: "Patrick Hand";
     color: var(--midPink);
