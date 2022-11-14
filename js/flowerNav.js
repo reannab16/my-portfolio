@@ -40,7 +40,7 @@ function bloom(flowerNo, hasBloomed) {
 
     if (hasBloomed == false) {
         var counter = 0;
-        timeout([1, 5], 0.15, function (i) {
+        timeout([1, 5], 0.1, function (i) {
             if (hasBloomed == false) {
                 leftFlower.src = flowers[i];
                 rightFlower.src = flowers[i];
