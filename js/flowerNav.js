@@ -1,4 +1,7 @@
 
+var isRunning = false;
+
+
 
 function timeout(range, time, callback) {
     var i = range[0];
@@ -38,7 +41,8 @@ function bloom(flowerNo, hasBloomed) {
     leftFlower = document.getElementsByClassName("bloomingL")[flowerNo]
     rightFlower = document.getElementsByClassName("bloomingR")[flowerNo]
 
-    if (hasBloomed == false) {
+    if (hasBloomed == false && isRunning == false) {
+        isRunning = true;
         var counter = 0;
         timeout([1, 5], 0.15, function (i) {
             if (hasBloomed == false) {
@@ -47,6 +51,7 @@ function bloom(flowerNo, hasBloomed) {
             }
             if (counter == 3) {
                 bloomTracker[flowerNo] = true;
+                isRunning= false;
             }
             counter++;
         });
