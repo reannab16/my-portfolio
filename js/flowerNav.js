@@ -16,7 +16,7 @@ function timeout(range, time, callback) {
             }
         }, time * 1000)
     }
-}
+};
 
 
 
@@ -64,27 +64,6 @@ function deBloom(flowerNo) {
         document.getElementsByClassName("bloomingR")[flowerNo].src = flowers[0];
         bloomTracker[flowerNo] = false;
     };
-
-
-// function deBloom(flowerNo, hasBloomed) {
-//     leftFlower = document.getElementsByClassName("bloomingL")[flowerNo]
-//     rightFlower = document.getElementsByClassName("bloomingR")[flowerNo]
-
-//     if (hasBloomed == true) {
-//         var counter1 = 0;
-//         timeout([4,3,2,1], 0.15, function (i) {
-//             if (hasBloomed == true) {
-//                 leftFlower.src = flowers[i];
-//                 rightFlower.src = flowers[i];
-//             }
-//             console.log(i);
-//             if (counter1 == 3) {
-//                 bloomTracker[flowerNo] = false;
-//             }
-//             counter1 ++;
-//         });
-//     };
-// }
 
 
 window.addEventListener("scroll", function () {
