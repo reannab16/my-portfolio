@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js"></script>
     <script src="./js/flowerNav.js"></script>
+
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
@@ -18,7 +19,7 @@
 <body>
     <div class="background-container flex-c-col">
 
-        <div class="main-container flex-c-col">
+        <div class="main-container flex-c-col" id="blurred">
 
             <div class="flowerNav flex-c-row">
                 <div class="flowers-left flex-c-col">
@@ -119,66 +120,118 @@
                 <div class="portfolio-gallery flex-c-column">
                     <div class="top section flex-c-row">
 
-                        <div class="block">
+                        <a onclick="toggle()" class="block hidden">
                             <div class="title-block">
                                 <div class="project-name">Project 1</div>
                                 <div class="close-square">
-                                    <!-- <span>x</span> -->
+                                    <svg class="cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                        <line x1="14" y1="1" x2="0" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                    </svg>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="block">
+                        <a onclick="toggle()" class="block hidden">
                             <div class="title-block">
                                 <div class="project-name">Project 2</div>
-                                <div class="close-square"></div></div>
-                        </div>
+                                <div class="close-square">
+                                    <svg class="cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                        <line x1="14" y1="1" x2="0" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
 
-                        <div class="block">
+                        <a onclick="toggle()" class="block hidden">
                             <div class="title-block">
                                 <div class="project-name">Project 3</div>
-                                <div class="close-square"></div></div>
-                        </div>
+                                <div class="close-square">
+                                    <svg class="cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                        <line x1="14" y1="1" x2="0" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
 
 
                     <div class="middle section">
 
-                        <div class="block">
+                        <a onclick="toggle()" class="block hidden">
                             <div class="title-block">
                                 <div class="project-name">Project 4</div>
-                                <div class="close-square"></div></div>
+                                <div class="close-square">
+                                    <svg class="cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                        <line x1="14" y1="1" x2="0" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- <div class="me-coding-img"></div> -->
+
+                        <div class="console-log-animation flex-c-row">
+                            <span class="typing-code"></span>
+                            <span class="cursor">|</span>
                         </div>
 
-                        <div class="block">
+                        <a onclick="toggle()" class="block hidden">
                             <div class="title-block">
                                 <div class="project-name">Project 5</div>
-                                <div class="close-square"></div></div>
-                        </div>
+                                <div class="close-square">
+                                    <svg class="cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                        <line x1="14" y1="1" x2="0" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
 
 
                     <div class="bottom section flex-c-row">
 
-                        <div class="block">
+                        <a onclick="toggle()" class="block project-6 hidden">
                             <div class="title-block">
-                                <div class="project-name">Project 6</div>
-                                <div class="close-square"></div></div>
-                        </div>
+                                <div class="project-name">Butterfly Girl painting</div>
+                                <div class="close-square">
+                                    <svg class="cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                        <line x1="14" y1="1" x2="0" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
 
-                        <div class="block">
+                        <a onclick="toggle()" class="block project-7 hidden">
                             <div class="title-block">
-                                <div class="project-name">Project 7</div>
-                                <div class="close-square"></div></div>
-                        </div>
+                                <div class="project-name">UFO painting</div>
+                                <div class="close-square">
+                                    <svg class="cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                        <line x1="14" y1="1" x2="0" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
 
-                        <div class="block">
+                        <a onclick="toggle()" class="block project-8 hidden">
                             <div class="title-block">
-                                <div class="project-name">Project 8</div>
-                                <div class="close-square"></div></div>
-                        </div>
+                                <div class="project-name">Rose-Tinted Lenses painting</div>
+                                <div class="close-square">
+                                    <svg class="cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                                        <line x1="0" y1="0" x2="15" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                        <line x1="14" y1="1" x2="0" y2="15" stroke="#ff99c8" stroke-width="1.3" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
 
@@ -187,13 +240,18 @@
             </div>
 
             <div class="buy-art add-z">
-                <p>Purchase my artwork as prints, stickers, etc on my <a href="https://society6.com/wherewildflowersgrow" target="_blank">Society6</a> & <a href="https://www.redbubble.com/people/oopsiedaisy/shop?asc=u" target="_blank">RedBubble</a> and view all my artwork on my art <a href="https://www.instagram.com/reanna_art/" target="_blank">insta!</a></p>
+                <p>Purchase my artwork as prints, stickers, etc on my <a
+                        href="https://society6.com/wherewildflowersgrow" target="_blank">Society6</a> & <a
+                        href="https://www.redbubble.com/people/oopsiedaisy/shop?asc=u" target="_blank">RedBubble</a> and
+                    view all my artwork on my art <a href="https://www.instagram.com/reanna_art/"
+                        target="_blank">insta!</a></p>
             </div>
 
             <div id="contact" class="add-z">
                 <p>To get in touch, email <br>
-                <a href="mailto:reannab16@gmail.com">reannab16@gmail.com</a><br>
-            or message me on LinkedIn</p>
+                    <a href="mailto:reannab16@gmail.com">reannab16@gmail.com</a><br>
+                    or message me on LinkedIn
+                </p>
             </div>
 
             <div class="footer">
@@ -201,6 +259,23 @@
             </div>
 
         </div>
+
+        <div Id="popup">
+            <div class="big-title-block">
+                <div class="big-project-name"></div>
+                <a onclick="toggle()" class="big-close-square">
+                    <svg class="big-cross" xmlns: "http://www.w3.org/2000/svg" viewBox: "0 0 100 100">
+                        <line class="line" stroke="#ff99c8" x1="0" y1="0" x2="35" y2="35" stroke-width="3" />
+                        <line class="line" stroke="#ff99c8" x1="35" y1="0" x2="0" y2="35" stroke-width="3" />
+                    </svg>
+                </a>
+            </div>
+            <div class="popup-main-container">
+                <img src="" class="popup-img">
+
+            </div>
+        </div>
+    </div>
 
     </div>
 
