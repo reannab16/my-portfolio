@@ -112,7 +112,7 @@ window.addEventListener("scroll", function () {
         deBloom(4);
     }
 
-    if (window.scrollY > (contact.offsetTop) && window.scrollY < (contact.offsetTop + contact.offsetHeight)) {
+    if (window.scrollY > (port.offsetTop + port.offsetHeight) && window.scrollY < (contact.offsetTop + contact.offsetHeight)) {
         // console.log('bloom 5');
         bloom(4, bloomTracker[4]);
         deBloom(0);
