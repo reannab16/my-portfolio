@@ -556,7 +556,8 @@ body {
 .console-log-animation {
     color: var(--darkerBlue);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.17vmax;
+    /* font-size: 1.17vmax; */
+    font-size: 1.5vmax;
     font-weight: bold;
 }
 
@@ -685,7 +686,7 @@ body {
     color: var(--orange);
 }
 
-#contact {
+/* #contact {
     padding-top: 25vh;
     width: 60%;
     height: 80vh;
@@ -700,12 +701,80 @@ body {
 #contact a {
     color: var(--midPink);
     text-decoration: underline;
+} */
+
+#contact {
+    margin-top: 10vh;
+}
+
+.contact-container {
+    height: 73vh;
+    width: 39vw;
+    background-color: var(--midPink);
+    border-radius: 50px;
+    border: var(--lightPink) solid 8px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: var(--lightPink);
+    font-family: "Patrick Hand";
+    font-weight: bold;
+    font-size: 5vmin;
+    padding: 3vh;
+}
+
+.form-control {
+    /* height: 5vmin; */
+    width: 65%;
+    text-align: center;
+    padding:1.3vh;
+    margin: 1vh;
+    border: var(--lightPink) solid 3px;
+    background-color: var(--offWhite);
+    border-radius: 10px;
+    font-family: "Patrick Hand";
+    font-size: 1.8vh;
+    color: var(--midPink);
+}
+
+::placeholder {
+    color: var(--midPink);
+    opacity: 0.75;
+}
+
+.submit-btn {
+    margin: 3.5vh;
+    padding: 0 3vh;
+    height: 5.5vmin;
+    font-family: "Patrick Hand";
+    color: var(--midPink);
+    background-color: var(--lightPink);
+    border-radius: 9px;
+    font-size: 3vh;
+    border: var(--lightPink) solid;
+}
+
+.links-container {
+    margin-top: 6.9vh;
+    width: 100%;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.contact-links a {
+    color: var(--darkerBlue);
+    margin: 5px;
 }
 
 
 
 .footer {
-    margin-top: 2vh;
+    margin-top: 15px;
     height: 8vh;
     width: 100vw;
     background-color: var(--offWhite);
