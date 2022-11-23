@@ -54,11 +54,13 @@ const typingCode = [
 ];
 
 var typedCode = document.querySelector('.typing-code');
+var smalltypedCode = document.querySelector('.small-typing-code');
 let charIndex1 = 0;
+let charIndex2 = 0;
 var finishedType = false;
 hidden = document.querySelectorAll(".hidden");
 var hiddenElIndex = 0;
-
+var typingNow = false;
 
 function typeCode() {
     if (charIndex1 < typingCode[0].length) {

@@ -447,6 +447,10 @@ body {
     margin-top: 15vh;
     justify-content: flex-start;
     width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-header {
@@ -463,6 +467,10 @@ body {
 
 .section {
     height: 33.3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .block {
@@ -570,6 +578,11 @@ body {
     opacity: 1;
 }
 
+.console-log-animation.small {
+    display: none;
+}
+
+
 
 
 .project-6 {
@@ -652,7 +665,7 @@ body {
 
 .popup-main-container {
     width: 100%;
-    height: 99.5%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -663,6 +676,10 @@ body {
     width:auto;
 }
 
+.smol-line {
+    display: none;
+}
+
 
 .buy-art {
     width: 45%;
@@ -671,6 +688,99 @@ body {
     color: var(--darkerBlue);
     font-size: 3vh;
     text-align: center;
+}
+
+@media screen and (max-width: 697px) {
+
+    .portfolio-section,
+    .middle.section, 
+    .section {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+    }
+
+    .portfolio-header {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .portfolio-gallery {
+        padding-top: 2%;
+        width: 100vw;
+        height: auto;
+    }
+
+    .console-log-animation.small {
+        display: contents;
+        font-size: 3vmax;
+    }
+
+    .console-log-animation {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .block {
+        height: 55vh;
+        width: 90vw;
+        margin-top: 2vh;
+    }
+
+    .top .block,
+    .bottom .block,
+    .middle .block {
+    width: 80vw;
+    height: 35vh;
+    } 
+
+    #popup,
+    .big-title-block {
+        top: 5%;
+        left: 2.5%;
+        width: 95%;
+        height: 90%;
+        overflow:hidden;
+    }
+
+    .big-title-block {
+        height: 50px;
+    }
+
+    .big-project-name {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    .big-close-square {
+        margin-right: 5%;
+        height: 20px;
+        width: 20px;
+    }
+
+    .big-cross {
+        width: 20px;
+        height: 20px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .smol-line {
+        display:block;
+    }
+
+    .buy-art {
+        margin-top: 6.5vh;
+    }
+
 }
 
 .buy-art a {
@@ -746,7 +856,7 @@ body {
 .submit-btn {
     margin: 3.5vh;
     padding: 0 3vh;
-    height: 5.5vmin;
+    height: 5.5vh;
     font-family: "Patrick Hand";
     color: var(--midPink);
     background-color: var(--lightPink);
@@ -771,7 +881,15 @@ body {
     margin: 5px;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-container {
+        width: 75vw;
+    }
 
+    .form-control {
+        width: 70%;
+    }
+}
 
 .footer {
     margin-top: 15px;
