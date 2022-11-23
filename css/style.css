@@ -214,19 +214,10 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 900px) {
-    .flowerNav {
-        display: none;
-    }
 
-    .flower-btn {
-        display: none;
-    }
-}
-
-.add-z {
+/* .add-z {
     z-index: 1;
-}
+} */
 
 .flowerNav {
     width: 100%;
@@ -247,6 +238,42 @@ body {
     margin: 10px 0;
 }
 
+@media screen and (max-width: 900px) {
+    .flowerNav {
+        /* flex-direction: column; */
+        position: fixed;
+        z-index: 10 !important;
+        width: 50vw !important;
+        bottom: 3px;
+        top: calc(100vh - 73px);
+        left: 22.5vw;
+        height: 70px !important;
+    }
+
+    .flowers-left {
+        flex-direction: row;
+        z-index: 5;
+        position: relative;
+        width: 50vw;
+    }
+
+    .flowers-right {
+        display: none;
+        position: relative;
+    }
+
+    .flower-btn {
+        z-index: 5;
+        position: relative;
+        width: 35px;
+        height: auto;
+    }
+
+    .bloomingL {
+        width: 70px !important;
+        height: auto;
+    }
+}
 
 .heythere-container {
     height: 100vh;
@@ -323,13 +350,17 @@ body {
     margin-bottom: -5%;
     width: 80%;
     height: auto;
+    position: relative;
+    z-index: 1;
 }
+
 
 .about-image {
     width: 20%;
     margin: 0 0 -1.8% 5vw;
     z-index: 1;
     min-width: 75px;
+    position: relative;
 }
 
 .hihi-image {
@@ -339,6 +370,7 @@ body {
     margin-bottom: 13%;
     box-sizing: content-box;
     min-width: 180px;
+    position: relative;
 }
 
 .text-box {
