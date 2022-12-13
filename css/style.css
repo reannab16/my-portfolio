@@ -238,9 +238,8 @@ body {
     margin: 10px 0;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .flowerNav {
-        /* flex-direction: column; */
         position: fixed;
         z-index: 10 !important;
         width: 50vw !important;
@@ -272,6 +271,12 @@ body {
     .bloomingL {
         width: 70px !important;
         height: auto;
+    }
+} */
+
+@media screen and (max-width: 935px) {
+    .flowerNav {
+        display: none;
     }
 }
 
@@ -495,6 +500,7 @@ body {
     margin-left: 0.5%;
     height: 80vh;
     width: 89%;
+    z-index: 1000;
 }
 
 .section {

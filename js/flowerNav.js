@@ -84,7 +84,7 @@ window.addEventListener("scroll", function () {
         deBloom(4);
     }
 
-    if (window.scrollY > (about.offsetTop) && window.scrollY < (about.offsetTop + about.offsetHeight)) {
+    if (window.scrollY > (hey.offsetTop + hey.offsetHeight) && window.scrollY < (about.offsetTop + about.offsetHeight)) {
         // console.log('bloom 2');
         bloom(1, bloomTracker[1]);
         deBloom(0);
@@ -94,7 +94,7 @@ window.addEventListener("scroll", function () {
 
     }
 
-    if (window.scrollY > (skills.offsetTop) && window.scrollY < (skills.offsetTop + skills.offsetHeight)) {
+    if (window.scrollY > (about.offsetTop + about.offsetHeight) && window.scrollY < (skills.offsetTop + skills.offsetHeight)) {
         // console.log('bloom 3');
         bloom(2, bloomTracker[2]);
         deBloom(0);
@@ -103,7 +103,7 @@ window.addEventListener("scroll", function () {
         deBloom(4);
     }
 
-    if (window.scrollY > (port.offsetTop) && window.scrollY < (port.offsetTop + port.offsetHeight)) {
+    if (window.scrollY > (skills.offsetTop + skills.offsetHeight) && window.scrollY < (port.offsetTop + port.offsetHeight)) {
         // console.log('bloom 4');
         bloom(3, bloomTracker[3]);
         deBloom(0);
