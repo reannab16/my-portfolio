@@ -228,7 +228,17 @@ body {
     right: 0;
     left: 0;
     justify-content: space-between;
-    z-index: 0;
+    z-index: 5;
+}
+
+.flowers-left, .flowers-right {
+    width: 119px;
+}
+
+.flower-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flower-btn img {
@@ -236,7 +246,68 @@ body {
     padding: 0 10px;
     height: auto;
     margin: 10px 0;
+    z-index: 1;
+    position: relative;
 }
+
+.descriptor {
+    background-color: var(--lightPink);
+    border-radius: 0px 5px 5px 0px;
+    padding: 2px 15px 2px 23.5px;
+    margin-left: -33px;
+    text-align: center;
+    font-family: "Patrick Hand";
+    display: none;
+    z-index: 0;
+    position:relative;
+}
+
+.descriptorR {
+    background-color: var(--lightPink);
+    border-radius: 5px 0px 0px 5px;
+    padding: 2px 30px 2px 27px;
+    margin: -33px;
+    text-align: center;
+    font-family: "Patrick Hand";
+    display: none;
+    z-index: 0;
+    position:relative;
+}
+
+#btn-1:hover #home-D, #btn-2:hover #about-D, 
+#btn-3:hover #skills-D, #btn-4:hover #portfolio-D, #btn-5:hover #contact-D, #btn-1L:hover #home-DL, #btn-2L:hover #about-DL, #btn-3L:hover #skills-DL, #btn-4L:hover #portfolio-DL, #btn-5L:hover #contact-DL {
+    display:inline-block;
+}
+
+
+#btn-4:hover #portfolio-D {
+    display:inline-block;
+}
+
+#btn-5:hover #contact-D {
+    display:inline-block;
+}
+
+#btn-1L:hover #home-DL {
+    display:inline-block;
+}
+
+#btn-2L:hover #about-DL {
+    display:inline-block;
+}
+
+#btn-3L:hover #skills-DL {
+    display:inline-block;
+}
+
+#btn-4L:hover #portfolio-DL {
+    display:inline-block;
+}
+
+#btn-5L:hover #contact-DL {
+    display:inline-block;
+}
+
 
 /* @media screen and (max-width: 900px) {
     .flowerNav {
@@ -726,6 +797,7 @@ body {
     color: var(--darkerBlue);
     font-size: 3vh;
     text-align: center;
+    z-index: 3000;
 }
 
 @media screen and (max-width: 697px) {
@@ -853,6 +925,7 @@ body {
 
 #contact {
     margin-top: 10vh;
+    z-index: 1000;
 }
 
 .contact-container {
@@ -943,3 +1016,29 @@ body {
     font-family: "Patrick Hand";
     opacity: 80%;
 }
+
+/* .side-container {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sidepanel {
+    height: 100vh;
+    z-index: 3000;
+    
+}
+
+.side-left {
+    height: 100vh;
+    width: 0vh;
+    background-image: linear-gradient(to left, rgba(255, 253, 238, 0), rgb(204, 180, 0));
+}
+
+.side-right {
+    background-image: linear-gradient(to right, rgba(255, 253, 238, 0), rgba(255, 253, 238, 1));
+    width: 0vh;
+} */
+

@@ -193,6 +193,38 @@ blockIndex[7].onclick = function() {
     popupImgIndex.src = popupImg[7];
 };
 
+// var sidepanelR = document.querySelector('.side-right');
+// var sidepanelL = document.querySelector('.side-left');
+
+// var showIt= false;
+
+// function showSidepanel(showIt) {
+//     console.log('working ya');
+//     if (showIt=true) {
+//         sidepanelR.style.width= "25vw";
+//         sidepanelL.style.width= "25vw";
+//     }
+// };
+
+
+// document.querySelector(".flowers-left").addEventListener('mouseover', function() {
+//     console.log('working yoo')
+//     showIt=true;
+//     console.log(showIt);
+// });
+
+// document.querySelector(".flowers-left").addEventListener('mouseout', function() {
+//     console.log('working yoo')
+//     showIt=false;
+//     console.log(showIt);
+// });
+
+
+
+// showSidepanel();
+
+
+
 
 
 

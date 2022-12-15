@@ -48,38 +48,48 @@
 
             <div class="flowerNav flex-c-row">
                 <div class="flowers-left flex-c-col">
-                    <a class="flower-btn" href="#hey">
-                        <img src="./resources/flower1.PNG" class="bloomingL">
-                    </a>
-                    <a class="flower-btn" href="#about">
-                        <img src="./resources/flower1.PNG" class="bloomingL">
-                    </a>
-                    <a class="flower-btn" href="#skills">
-                        <img src="./resources/flower1.PNG" class="bloomingL">
-                    </a>
-                    <a class="flower-btn" href="#portfolio">
-                        <img src="./resources/flower1.PNG" class="bloomingL">
-                    </a>
-                    <a class="flower-btn" href="#contact">
-                        <img src="./resources/flower1.PNG" class="bloomingL">
-                    </a>
+                    <div class="flower-btn" id="btn-1">
+                        <a href="#hey"><img src="./resources/flower1.PNG" class="bloomingL"></a>
+                        <p class="descriptor" id="home-D"><a href="#hey">home</a></p>
+                    </div>
+                    <div class="flower-btn" id="btn-2">
+                        <a href="#about"><img src="./resources/flower1.PNG" class="bloomingL"></a>
+                        <p class="descriptor" id="about-D"><a href="#about">about</a></p>
+                    </div>
+                    <div class="flower-btn" id="btn-3">
+                        <a href="#skills"><img src="./resources/flower1.PNG" class="bloomingL"></a>
+                        <p class="descriptor" id="skills-D"><a href="#skills">skills</a></p>
+                    </div>
+                    <div class="flower-btn" id="btn-4">
+                        <a href="#portfolio"><img src="./resources/flower1.PNG" class="bloomingL"></a>
+                        <p class="descriptor" id="portfolio-D"><a href="#portfolio">portfolio</a></p>
+                    </div>
+                    <div class="flower-btn" id="btn-5">
+                        <a href="#contact"><img src="./resources/flower1.PNG" class="bloomingL"></a>
+                        <p class="descriptor" id="contact-D"><a href="#hey">contact</a></p>
+                    </div>
                 </div>
                 <div class="flowers-right flex-c-col">
-                    <a class="flower-btn" href="#hey">
-                        <img src="./resources/flower1.PNG" class="bloomingR">
-                    </a>
-                    <a class="flower-btn" href="#about">
-                        <img src="./resources/flower1.PNG" class="bloomingR">
-                    </a>
-                    <a class="flower-btn" href="#skills">
-                        <img src="./resources/flower1.PNG" class="bloomingR">
-                    </a>
-                    <a class="flower-btn" href="#portfolio">
-                        <img src="./resources/flower1.PNG" class="bloomingR">
-                    </a>
-                    <a class="flower-btn" href="#contact">
-                        <img src="./resources/flower1.PNG" class="bloomingR">
-                    </a>
+                    <div class="flower-btn" id="btn-1L">
+                        <p class="descriptorR" id="home-DL"><a href="#hey">home</a></p>
+                        <a href="#hey"><img src="./resources/flower1.PNG" class="bloomingR"></a>
+                    </div>
+                    <div class="flower-btn" id="btn-2L">
+                        <p class="descriptorR" id="about-DL"><a href="#about">about</a></p>
+                        <a href="#about"><img src="./resources/flower1.PNG" class="bloomingR"></a>
+                    </div>
+                    <div class="flower-btn" id="btn-3L">
+                        <p class="descriptorR" id="skills-DL"><a href="#skills">skills</a></p>
+                        <a href="#skills"><img src="./resources/flower1.PNG" class="bloomingR"></a>
+                    </div>
+                    <div class="flower-btn" id="btn-4L">
+                        <p class="descriptorR" id="portfolio-DL"><a href="#portfolio">portfolio</a></p>
+                        <a href="#portfolio"><img src="./resources/flower1.PNG" class="bloomingR"></a>
+                    </div>
+                    <div class="flower-btn" id="btn-5L">
+                        <p class="descriptorR" id="contact-DL"><a href="#hey">contact</a></p>
+                        <a href="#contact"><img src="./resources/flower1.PNG" class="bloomingR"></a>
+                    </div>
                 </div>
             </div>
 
@@ -323,10 +333,13 @@
             </div>
             <div class="popup-main-container">
                 <img src="" class="popup-img">
-
             </div>
         </div>
     </div>
+    <!-- <div class="flex-c side-container">
+        <div class="sidepanel side-left"></div>
+        <div class="sidepanel side-right"></div>
+    </div> -->
 
     </div>
 
@@ -338,6 +351,8 @@
             document.getElementById('preloader').style.display = "none";
         }, 250);
     })
+
+    
 
 </script>
 
