@@ -632,7 +632,6 @@ body {
     font-size: 90%;
     margin-left: 3%;
     font-weight: bold;
-
 }
 
 @media screen and (max-width: 1279px) {
@@ -692,7 +691,9 @@ body {
 }
 
 
-
+.project-1 {
+    background-image: url(../project-img/tictactoe.png);
+}
 
 .project-6 {
     background-image: url(../project-img/butterfly-girl.png);
@@ -726,6 +727,7 @@ body {
     opacity: 1;
     transition: 0.5s;
 }
+
 
 .big-title-block {
     position: fixed;
@@ -778,6 +780,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    overflow: hidden;
 }
 
 .popup-img {

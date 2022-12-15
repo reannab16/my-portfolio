@@ -122,7 +122,7 @@ const popupContent = [
 ];
 
 const popupImg = [
-    "",
+    "./project-img/tictactoe.png",
     "",
     "",
     "",
@@ -131,6 +131,12 @@ const popupImg = [
     "./project-img/UFO\ Painting.png",
     "./project-img/rose.jpg"
 ];
+
+const popupDescript = [
+    "Basic tic-tac-toe game made with JavaScript!"
+]
+
+
 
 function toggle() {
     blur.classList.toggle('active');
