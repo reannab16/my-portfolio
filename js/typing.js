@@ -109,9 +109,11 @@ var popup = document.getElementById('popup');
 var blockIndex = document.getElementsByClassName('block');
 var popupHeader = document.querySelector('.big-project-name');
 var popupImgIndex = document.querySelector('.popup-img');
+var descript = document.querySelector('.proj-dscrptn');
+var popupLink = document.querySelector('.proj-link');
 
 const popupContent = [
-    "Project 1",
+    "Tic-Tac-Toe",
     "Project 2",
     "Project 3",
     "Project 4",
@@ -133,9 +135,41 @@ const popupImg = [
 ];
 
 const popupDescript = [
-    "Basic tic-tac-toe game made with JavaScript!"
-]
+    "Basic tic-tac-toe game made with JavaScript!",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+];
 
+const link = [
+    "https://reannab16.github.io/tic-tac-toe/",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+];
+
+const linkText = 'Click here to view it!!';
+
+
+function changeFormat(isProject) {
+    if (isProject== true) {
+        popupImgIndex.setAttribute("style", "max-width: 65% !important; object-fit: cover !important;")
+        document.querySelector('.popup-text').style.display = 'block';
+    };
+
+    if (isProject== false) {
+        popupImgIndex.setAttribute("style", "max-width: 100%; object-fit: contain;")
+        document.querySelector('.popup-text').style.display = 'none';
+    }
+};
 
 
 function toggle() {
@@ -148,6 +182,12 @@ blockIndex[0].onclick = function() {
     blur.classList.toggle('active');
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[0];
+    descript.textContent = popupDescript[0];
+    console.log(descript.textContent);
+    changeFormat(true);
+    popupLink.textContent = linkText;
+    popupLink.href = link[0];
+
 };
 
 blockIndex[1].onclick = function() {
@@ -155,6 +195,9 @@ blockIndex[1].onclick = function() {
     blur.classList.toggle('active');
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[1];
+    descript.textContent = popupDescript[1];
+    popupLink.textContent = '';
+    changeFormat(true);
 };
 
 blockIndex[2].onclick = function() {
@@ -162,6 +205,9 @@ blockIndex[2].onclick = function() {
     blur.classList.toggle('active');
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[2];
+    descript.textContent = popupDescript[2];
+    popupLink.textContent = '';
+    changeFormat(true);
 };
 
 blockIndex[3].onclick = function() {
@@ -169,6 +215,9 @@ blockIndex[3].onclick = function() {
     blur.classList.toggle('active');
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[3];
+    descript.textContent = popupDescript[3];
+    popupLink.textContent = '';
+    changeFormat(true);
 };
 
 blockIndex[4].onclick = function() {
@@ -176,6 +225,9 @@ blockIndex[4].onclick = function() {
     blur.classList.toggle('active');
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[4];
+    descript.textContent = popupDescript[4];
+    popupLink.textContent = '';
+    changeFormat(true);
 };
 
 blockIndex[5].onclick = function() {
@@ -183,6 +235,9 @@ blockIndex[5].onclick = function() {
     blur.classList.toggle('active');
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[5];
+    descript.textContent = popupDescript[5];
+    popupLink.textContent = '';
+    changeFormat(false);
 };
 
 blockIndex[6].onclick = function() {
@@ -190,6 +245,9 @@ blockIndex[6].onclick = function() {
     blur.classList.toggle('active');
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[6];
+    descript.textContent = popupDescript[6];
+    popupLink.textContent = '';
+    changeFormat(false);
 };
 
 blockIndex[7].onclick = function() {
@@ -197,6 +255,9 @@ blockIndex[7].onclick = function() {
     blur.classList.toggle('active');
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[7];
+    descript.textContent = popupDescript[7];
+    popupLink.textContent = '';
+    changeFormat(false);
 };
 
 // var sidepanelR = document.querySelector('.side-right');

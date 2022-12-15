@@ -720,6 +720,7 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 #popup.active {
@@ -780,16 +781,43 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-}
-
-.popup-img {
-    height:inherit;
-    width:auto;
 }
 
 .smol-line {
     display: none;
+}
+
+.popup-img {
+    height:inherit;
+    width: auto;
+}
+
+.popup-text {
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-dscrptn {
+    font-family: "Patrick Hand";
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    color: var(--midPink);
+}
+
+.proj-link {
+    font-family: "Patrick Hand";
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    color: var(--midPink);
+}
+
+.proj-link:hover {
+    color: var(--orange);
 }
 
 
