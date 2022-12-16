@@ -296,6 +296,7 @@ function burgerFunction() {
     document.querySelector('.line-2').classList.toggle('clicked');
     document.querySelector('.line-3').classList.toggle('clicked');
     document.querySelector('.burger').classList.toggle('clicked');
+    document.querySelector('.mobile-nav').classList.toggle('clicked');
   };
 
 
