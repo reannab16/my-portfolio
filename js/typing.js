@@ -291,6 +291,13 @@ blockIndex[7].onclick = function() {
 // showSidepanel();
 
 
+function burgerFunction() {
+    document.querySelector('.line-1').classList.toggle('clicked');
+    document.querySelector('.line-2').classList.toggle('clicked');
+    document.querySelector('.line-3').classList.toggle('clicked');
+    document.querySelector('.burger').classList.toggle('clicked');
+  };
+
 
 
 

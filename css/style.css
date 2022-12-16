@@ -15,7 +15,7 @@
 :root {
     --backgroundColour: #fffad2;
     --lightPink: #ffe2ef;
-    --darkPink: #c4537a;
+    --darkPink: #d4497a;
     --midPink: #ff99c8;
     --teal: #119da4;
     --orange: #f9b985;
@@ -345,10 +345,103 @@ body {
     }
 } */
 
+.burger {
+    display: none;
+}
+
 @media screen and (max-width: 935px) {
     .flowerNav {
         display: none;
     }
+
+    .burger {
+        display: block;
+        position: fixed;
+        top: 9px;
+        right: 9px;
+        z-index: 5000;
+    }
+      
+      
+    .burger path {
+        stroke-dasharray: 1650;
+        stroke-dashoffset: 1500;
+        stroke-width: 30;
+        stroke: var(--midPink);
+        display: none;
+    }
+      
+      .burger.clicked path {
+        display: block;
+        animation: burgerhover linear 0.8s;
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset, 0.8s;
+      }
+      
+      /* .burger-flower.clicked {
+        stroke-dashoffset: 0;
+        transition: stroke-dashoffset, 0.8s;
+        animation: none;
+        color: var(--midPink);
+        transition: color, 0.8s;
+      } */
+      
+      @keyframes burgerhover {
+        0% {
+          stroke-dashoffset: 1500;
+        }
+        
+        80% {
+          stroke-dashoffset: 0;
+        }
+        
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+      
+      .burger-line {
+        width: 30px;
+        height: 4.5px;
+        border-radius: 10px;
+        background-color: var(--orange);
+        z-index: 1000000;
+        position: absolute;
+      }
+      
+      .line-2 {
+        top: calc(35px - 2.5px);
+        left: calc(50% - 16px);
+        transition: transform, 0.5s;
+        /* background-color: var(--darkPink); */
+      }
+      
+      .line-1 {
+        top: calc(35px - 12.5px);
+        left: calc(50% - 16px);
+        /* background-color: var(--orange); */
+      }
+      
+      .line-3 {
+        top: calc(35px + 7px);
+        left: calc(50% - 15.5px);
+        /* background-color: var(--midPink); */
+      }
+      
+      .burger .line-1.clicked {
+        transform: translateY(10px) rotate(45deg) ; 
+        transition: transform, 0.5s;
+      }
+      
+      .burger .line-2.clicked {
+        opacity: 0;
+        transition: opacity, 0.5s;
+      }
+      
+      .burger .line-3.clicked {
+        transform: translateY(-10px) rotate(-45deg);
+        transition: transform, 0.5s;
+      }
 }
 
 .heythere-container {
@@ -418,6 +511,7 @@ body {
 .about-me {
     height: 100%;
     margin-top: 1%;
+    z-index: 2000;
 }
 
 .about-me-header {
@@ -463,6 +557,15 @@ body {
     font-family: "Patrick Hand";
     font-size: max(2vw, 20px);
     color: var(--teal);
+}
+
+.describe-me > a {
+    color: var(--teal);
+}
+
+.describe-me > a:hover {
+    color: var(--lightPink);
+    text-decoration: none;
 }
 
 .hihi-image-mob {
