@@ -21,8 +21,8 @@ function timeout(range, time, callback) {
 
 
 let flowers = [
-    "./resources/flower1.PNG",
-    "./resources/flower2.PNG",
+    "./resources/flower1.avif",
+    "./resources/flower2.avif",
     "./resources/flower3.PNG",
     "./resources/flower4.PNG",
     "./resources/flower5.PNG",

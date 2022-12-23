@@ -54,7 +54,7 @@ const typingCode = [
 ];
 
 var typedCode = document.querySelector('.typing-code');
-var smalltypedCode = document.querySelector('.small-typing-code');
+// var smalltypedCode = document.querySelector('.small-typing-code');
 let charIndex1 = 0;
 let charIndex2 = 0;
 var finishedType = false;
