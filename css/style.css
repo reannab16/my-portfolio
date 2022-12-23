@@ -735,6 +735,7 @@ body {
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .block:focus,
@@ -769,6 +770,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position:relative;
+    z-index: 1;
 }
 
 .project-name {
@@ -835,21 +838,15 @@ body {
     display: none;
 }
 
-
-.project-1 {
-    background-image: url(../project-img/tictactoe.png);
-}
-
-.project-6 {
-    background-image: url(../project-img/butterfly-girl.png);
-}
-
-.project-7 {
-    background-image: url(../project-img/UFO\ Painting.png);
-}
-
-.project-8 {
-    background-image: url(../project-img/rose.jpg);
+.block img {
+    /* background-image: url(../project-img/butterfly-girl.png); */
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-top: -24.5px;
+    z-index: 0;
+    position: relative;
 }
 
 #popup {
