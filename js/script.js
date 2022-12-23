@@ -11,7 +11,7 @@ images = [
     "./resources/one.PNG",
     "./resources/twotwo.avif",
     "./resources/one.PNG",
-    "./resources/mid.PNG",
+    "./resources/mid.avif",
     "./resources/peace.PNG",
     "./resources/peace.PNG",
     "./resources/peace.PNG",
@@ -24,7 +24,7 @@ images = [
     "./resources/peace.PNG",
     "./resources/peace.PNG",
     "./resources/peace.PNG",
-    "./resources/mid.PNG",
+    "./resources/mid.avif",
     "./resources/one.PNG",
 ];
 
