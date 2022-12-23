@@ -23,9 +23,9 @@ function timeout(range, time, callback) {
 let flowers = [
     "./resources/flower1.avif",
     "./resources/flower2.avif",
-    "./resources/flower3.PNG",
-    "./resources/flower4.PNG",
-    "./resources/flower5.PNG",
+    "./resources/flower3.avif",
+    "./resources/flower4.avif",
+    "./resources/flower5.avif",
 ];
 
 let bloomTracker = {
