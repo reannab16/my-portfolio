@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Just+Another+Hand&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Just+Another+Hand&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@300&display=swap');
+
 
 *,
 *::before,
@@ -307,43 +309,6 @@ body {
 #btn-5L:hover #contact-DL {
     display:inline-block;
 }
-
-
-/* @media screen and (max-width: 900px) {
-    .flowerNav {
-        position: fixed;
-        z-index: 10 !important;
-        width: 50vw !important;
-        bottom: 3px;
-        top: calc(100vh - 73px);
-        left: 22.5vw;
-        height: 70px !important;
-    }
-
-    .flowers-left {
-        flex-direction: row;
-        z-index: 5;
-        position: relative;
-        width: 50vw;
-    }
-
-    .flowers-right {
-        display: none;
-        position: relative;
-    }
-
-    .flower-btn {
-        z-index: 5;
-        position: relative;
-        width: 35px;
-        height: auto;
-    }
-
-    .bloomingL {
-        width: 70px !important;
-        height: auto;
-    }
-} */
 
 .mobile-nav {
     display: none;
@@ -813,17 +778,90 @@ body {
 }
 
 .console-log-animation {
-    height: 95%;
-    width: 26%;
+    height: 90%;
+    width: 45%;
+    background-color: var(--offWhite);
+    border: 4.5px solid var(--lightPink);
+    position: relative;
 }
 
 .console-log-animation {
-    color: var(--darkerBlue);
+    color: var(--midPink);
     font-family: 'Courier New', Courier, monospace;
     /* font-size: 1.17vmax; */
     font-size: 1.5vmax;
     font-weight: bold;
 }
+
+.console-title-block {
+    background-color: var(--lightPink);
+    width: 100%;
+    height: 24.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Source Sans Pro";
+    font-size: 80%;
+    color: var(--midPink);
+}
+
+.sizing-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notepad-img {
+    width: 56px;
+}
+
+.smaller {
+    margin: 13.5px 5px 5px 0px;
+    height: 2.5px;
+    width: 13px;
+    background-color: var(--midPink);
+}
+
+.larger {
+    height: 13px;
+    width: 15px;
+    margin-bottom: 6px;
+    margin-top: 5.5px;
+    box-sizing: border-box;
+    border: 1.5px solid var(--midPink);
+    border-top: 2.5px solid var(--midPink);
+    margin-right: 3px;
+}
+
+
+
+.crossycrossy {
+    width: 18.9px;
+    height: 2.5px;
+    transform: rotate(45deg);
+    background-color: var(--midPink);
+    position: relative;
+    overflow: visible;
+}
+
+.crossycrossy::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    height: 2.5px;
+    width: 18.9px;
+    background-color:var(--midPink);
+}
+
+
 
 .hidden {
     opacity: 0;
