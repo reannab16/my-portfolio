@@ -111,11 +111,12 @@ var popupHeader = document.querySelector('.big-project-name');
 var popupImgIndex = document.querySelector('.popup-img');
 var descript = document.querySelector('.proj-dscrptn');
 var popupLink = document.querySelector('.proj-link');
+var popupSkills = document.querySelector('.proj-skills')
 
 const popupContent = [
     "Tic-Tac-Toe",
-    "Project 2",
-    "Project 3",
+    "Birthday Invite & Countdown",
+    "New Portfolio",
     "Project 4",
     "Project 5",
     "Butterfly Girl Painting",
@@ -125,8 +126,8 @@ const popupContent = [
 
 const popupImg = [
     "./project-img/tictactoe.png",
-    "",
-    "",
+    "./project-img/fifty.png",
+    "./project-img/portfolio1smol.png",
     "",
     "",
     "./project-img/butterfly-girl.png",
@@ -136,8 +137,8 @@ const popupImg = [
 
 const popupDescript = [
     "Basic tic-tac-toe game made with JavaScript!",
-    "",
-    "",
+    "Invitation website I made for my mum's 50th birthday, including a countdown page after submitting RSVP form",
+    "My new portfolio website I am currently working on though it is not completely ready yet.",
     "",
     "",
     "",
@@ -147,8 +148,19 @@ const popupDescript = [
 
 const link = [
     "https://reannab16.github.io/tic-tac-toe/",
+    "https://reannab16.github.io/mama-birthday-website",
+    "https://reannab16.github.io/portfoliowebsite",
     "",
     "",
+    "",
+    "",
+    ""
+];
+
+const projskills = [
+    "Skills: HTMl, CSS, JS",
+    "Skills: HTML, Tailwind, Typescript, Next.js",
+    "Skills: HTML, Tailwind, Typescript, Next.js, Framer Motion",
     "",
     "",
     "",
@@ -183,10 +195,12 @@ blockIndex[0].onclick = function() {
     popup.classList.toggle('active');
     popupImgIndex.src = popupImg[0];
     descript.textContent = popupDescript[0];
+    popupSkills.textContent = projskills[0];
     console.log(descript.textContent);
     changeFormat(true);
     popupLink.textContent = linkText;
     popupLink.href = link[0];
+
 
 };
 
@@ -198,6 +212,9 @@ blockIndex[1].onclick = function() {
     descript.textContent = popupDescript[1];
     popupLink.textContent = '';
     changeFormat(true);
+    popupLink.textContent = linkText;
+    popupLink.href = link[1];
+    popupSkills.textContent = projskills[1];
 };
 
 blockIndex[2].onclick = function() {
@@ -208,6 +225,9 @@ blockIndex[2].onclick = function() {
     descript.textContent = popupDescript[2];
     popupLink.textContent = '';
     changeFormat(true);
+    popupLink.textContent = linkText;
+    popupLink.href = link[2];
+    popupSkills.textContent = projskills[2];
 };
 
 blockIndex[3].onclick = function() {
@@ -217,6 +237,7 @@ blockIndex[3].onclick = function() {
     popupImgIndex.src = popupImg[3];
     descript.textContent = popupDescript[3];
     popupLink.textContent = '';
+    popupSkills.textContent = projskills[3];
     changeFormat(true);
 };
 

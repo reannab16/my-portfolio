@@ -983,6 +983,7 @@ body {
 .popup-text {
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .proj-dscrptn {
@@ -999,11 +1000,23 @@ body {
     font-size: 25px;
     padding: 20px;
     color: var(--midPink);
+    width: 100%;
 }
 
 .proj-link:hover {
     color: var(--orange);
 }
+
+.proj-skills {
+    font-family: "Patrick Hand";
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: var(--midPink);
+    width: 100%;
+}
+
 
 
 .buy-art {
